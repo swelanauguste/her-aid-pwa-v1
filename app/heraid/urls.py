@@ -1,9 +1,10 @@
 from django.urls import path
 
-from .views import IndexView
+from .views import HomeView, ResourceInformationView
 
 # app_name = "heraid"
 
 urlpatterns = [
-    path("", IndexView.as_view(), name="index"),
+    path("", HomeView.as_view(), name="home"),
+    path("types-of-abuse/", ResourceInformationView.as_view(), name="types-of-abuse"),
 ]

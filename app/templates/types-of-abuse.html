@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+
+
+{% block heat_title %}
+
+{% endblock heat_title %}
+
+
+
+{% block content %}
+<h1 class="fw-bold py-3 px-5 sticky-top bg-white shadow">Types of Abuse</h1>
+<div class="container-sm-fluid">
+    {% include "nav-bar.html" %}
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <p>Gender-based violence is a phenomenon deeply rooted in
+                    gender
+                    inequality
+                    and continues to be one of the most notable human rights
+                    violations
+                    within all societies. Gender-based violence is violence
+                    directed
+                    against a person because of their gender.</p>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Gender-based Violence</h5>
+                        <p class="card-text">This is a longer card with
+                            supporting text below as a natural lead-in to
+                            additional content. This content is a little bit
+                            longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Child Abuse</h5>
+                        <p class="card-text">This is a longer card with
+                            supporting text below as a natural lead-in to
+                            additional content. This content is a little bit
+                            longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Trafficking</h5>
+                        <p class="card-text">This is a longer card with
+                            supporting text below as a natural lead-in to
+                            additional content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
