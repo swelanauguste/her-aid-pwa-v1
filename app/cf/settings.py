@@ -132,13 +132,13 @@ PWA_APP_STATUS_BAR_COLOR = 'default'
 
 PWA_APP_ICONS = [
     {
-        'src': '/static/images/kingship-logo.png',
+        'src': '/static/images/her-aid-logo.png',
         'sizes': '160x160'
     }
 ]
 PWA_APP_ICONS_APPLE = [
     {
-        'src': '/static/images/kingship-logo.png',
+        'src': '/static/images/her-aid-logo.png',
         'sizes': '160x160'
     }
 ]
