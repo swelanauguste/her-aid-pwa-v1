@@ -6,4 +6,4 @@ class HomeView(TemplateView):
 
 
 class ResourceInformationView(TemplateView):
-    template_name = "types-of-abuse.html"
+    template_name = "resource-information.html"

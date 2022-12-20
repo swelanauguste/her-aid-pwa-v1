@@ -6,5 +6,5 @@ from .views import HomeView, ResourceInformationView
 
 urlpatterns = [
     path("", HomeView.as_view(), name="home"),
-    path("types-of-abuse/", ResourceInformationView.as_view(), name="types-of-abuse"),
+    path("resource-information/", ResourceInformationView.as_view(), name="resource-information"),
 ]

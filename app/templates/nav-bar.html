@@ -1,16 +1,18 @@
-<div class="mb-3 col-lg-6 mx-auto py-3 px-3">
-    <input type="search"
-        name="q"
-        class="rounded-4 form-control py-3 shadow"
-        placeholder="Search our resources..."
-        id="">
+<div class="container-sm-fluid">
+    <div class="mb-3 col-lg-4 mx-auto py-3">
+        <input type="search"
+            name="q"
+            class="rounded-4 form-control py-3 shadow"
+            placeholder="Search our resources..."
+            id="">
+    </div>
 </div>
 <div style="overflow-x:auto; white-space: nowrap;"
     class="py-2 px-2 text-lg-center">
     <a class="text-decoration-none text-muted mx-2 fw-bold links-blue {% if request.resolver_match.url_name == 'home' %} is-active {% endif %}"
         href="/">Home</a>
-    <a class="text-decoration-none text-muted mx-2 fw-bold links-blue {% if request.resolver_match.url_name == 'types-of-abuse' %} is-active {% endif %}"
-        href="{% url 'types-of-abuse' %}">Resource Information</a>
+    <a class="text-decoration-none text-muted mx-2 fw-bold links-blue {% if request.resolver_match.url_name == 'resource-information' %} is-active {% endif %}"
+        href="{% url 'resource-information' %}">Resource Information</a>
     <a class="text-decoration-none text-muted mx-2 fw-bold links-blue"
         href="">Know Your Rights</a>
     <a class="text-decoration-none text-muted mx-2 fw-bold links-blue"
