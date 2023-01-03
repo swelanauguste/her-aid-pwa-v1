@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  web:
+    build: ./app
+    command: gunicorn cf.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - ./app/:/usr/src/app/
+    ports:
+      - 80:8000
+    env_file:
+      - ./.env
+    network_mode: "host"        
+    restart: always
+    # networks:
+    #   network:
+    #     ipv4_address: 10.100.42.44
+# networks:
+#   network:
+#     driver: bridge
+#     ipam:
+#       config:
+#         - subnet: 10.100.42.0/24
+#           gateway: 10.100.42.1
